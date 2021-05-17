@@ -1,4 +1,5 @@
 <?php
+session_start();
 //mengecek apa tombol submit sudah ditekan atau tidak
 if( isset($_POST["submit"]) ) {
     //mengecek username & password
