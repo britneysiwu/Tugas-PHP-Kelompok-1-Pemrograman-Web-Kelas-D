@@ -2,7 +2,7 @@
 //mengecek apa tombol submit sudah ditekan atau tidak
 if( isset($_POST["submit"]) ) {
     //mengecek username & password
-    if( $_POST["username"] == "admin" && $_POST["password"] == "123") {
+    if( $_POST["username"] == "britney" && $_POST["password"] == "3112") {
     //jika benar, redirect ke halaman admin
     header("Location: upload.html");
     exit;
