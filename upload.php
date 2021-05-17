@@ -21,5 +21,8 @@ session_start();
     <a href="logout.php">Logout</a>
     <p>Halo! Silahkan mengupload berkas</p>
     
+	<p><label for="gambar">Gambar :</label>
+	<input type="file" name="gambar" id="Gambar"></p>
+    
 </body>
 </html>
