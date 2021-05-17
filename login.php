@@ -1,10 +1,17 @@
 <?php
 session_start();
+//ketika sudah login, user tetap berada di halaman upload
+if( isset($_SESSION["login"]) ) {
+    header("Location: upload.php");
+    exit;
+}
+
 //mengecek apa tombol submit sudah ditekan atau tidak
 if( isset($_POST["submit"]) ) {
     //mengecek username & password
     if( $_POST["username"] == "britney" && $_POST["password"] == "3112") {
     //jika benar, redirect ke halaman admin
+    $_SESSION["login"] = true;
     header("Location: upload.html");
     exit;
     } else {
