@@ -9,9 +9,10 @@ if( isset($_POST["submit"]) ) {
     exit;
     } else {
     //jika salah, tampilkan pesan kesalahan
-    $error = true;
+    $error = true; 
+    } 
 }
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@ if( isset($_POST["submit"]) ) {
 <body>
     <h2>Login</h2>
     
-    <?php if( isset($error) ) ?>
+    <?php if( isset($error) ) : ?>
     <p>username atau password salah</p>
     <?php endif; ?>
     
@@ -41,6 +42,7 @@ if( isset($_POST["submit"]) ) {
         <li>
             <button type="submit" name="submit">Login</button>
         </li>
-    
+    </form>
+    </ul>
 </body>
 </html>
